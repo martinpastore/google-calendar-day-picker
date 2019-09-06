@@ -19,6 +19,13 @@
     "name": "Martín Pastore",
     "email": "martinpablopastore@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/martinpastore/google-calendar-day-picker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinpastore/google-calendar-day-picker.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
