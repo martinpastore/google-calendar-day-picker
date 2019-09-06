@@ -1,0 +1,25 @@
+.day-picker {
+    display: flex;
+    align-items: center;
+}
+
+.day-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: 500;
+    margin-right: .5rem;
+    width: 24px;
+    height: 24px;
+    background: #f1f3f4;
+    color: #80868b;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.day-check.checked {
+    color: #fff;
+    background: #1a73e8;
+}
