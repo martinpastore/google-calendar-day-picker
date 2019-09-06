@@ -7,7 +7,7 @@ class DayPicker extends Component {
         super(props)
 
         this.state = {
-            days: ['L', 'M', 'X', 'J', 'V', 'S', 'D'],
+            days: ['M', 'T', 'W', 'R', 'F', 'S', 'U'],
             selected: [],
         }
     }
@@ -20,6 +20,12 @@ class DayPicker extends Component {
                 this.props.value.map(v => {
                     this.markAsSelected(v)
                 })
+            })
+        }
+
+        if (this.props.ln) {
+            this.setState({
+                days: this.props.ln === 'es' ? ['L', 'M', 'X', 'J', 'V', 'S', 'D'] : ['M', 'T', 'W', 'R', 'F', 'S', 'U']
             })
         }
     }
@@ -68,6 +74,7 @@ class DayPicker extends Component {
 DayPicker.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.array,
+    ln: PropTypes.es,
 }
 
 export default DayPicker;

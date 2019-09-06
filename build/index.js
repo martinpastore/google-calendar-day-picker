@@ -387,7 +387,7 @@ var DayPicker = function (_Component) {
         var _this = _possibleConstructorReturn(this, (DayPicker.__proto__ || Object.getPrototypeOf(DayPicker)).call(this, props));
 
         _this.state = {
-            days: ['L', 'M', 'X', 'J', 'V', 'S', 'D'],
+            days: ['M', 'T', 'W', 'R', 'F', 'S', 'U'],
             selected: []
         };
         return _this;
@@ -405,6 +405,12 @@ var DayPicker = function (_Component) {
                     _this2.props.value.map(function (v) {
                         _this2.markAsSelected(v);
                     });
+                });
+            }
+
+            if (this.props.ln) {
+                this.setState({
+                    days: this.props.ln === 'es' ? ['L', 'M', 'X', 'J', 'V', 'S', 'D'] : ['M', 'T', 'W', 'R', 'F', 'S', 'U']
                 });
             }
         }
@@ -469,7 +475,8 @@ var DayPicker = function (_Component) {
 
 DayPicker.propTypes = {
     onChange: _propTypes2.default.func,
-    value: _propTypes2.default.array
+    value: _propTypes2.default.array,
+    ln: _propTypes2.default.es
 };
 
 exports.default = DayPicker;
