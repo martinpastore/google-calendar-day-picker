@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { localizations } from './localization';
 import './DayPicker.css';
 
 class DayPicker extends Component {
@@ -25,7 +26,7 @@ class DayPicker extends Component {
 
         if (this.props.ln) {
             this.setState({
-                days: this.props.ln === 'es' ? ['L', 'M', 'X', 'J', 'V', 'S', 'D'] : ['M', 'T', 'W', 'R', 'F', 'S', 'U']
+                days: localizations[this.props.ln]
             })
         }
     }
