@@ -2,7 +2,7 @@
 
 React day picker like the one used on google calendar event creation
 
-![Screenshot](screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/martinpastore/google-calendar-day-picker/master/images/screenshot.png)
 
 ## Installation
 
