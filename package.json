@@ -1,6 +1,6 @@
 {
   "name": "google-calendar-day-picker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React day picker like the one used on google calendar event creation",
   "main": "build/index.js",
   "peerDependencies": {
