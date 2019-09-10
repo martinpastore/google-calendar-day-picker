@@ -75,7 +75,7 @@ class DayPicker extends Component {
 DayPicker.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.array,
-    ln: PropTypes.es,
+    ln: PropTypes.string,
 }
 
 export default DayPicker;
